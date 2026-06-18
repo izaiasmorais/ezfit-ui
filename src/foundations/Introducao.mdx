@@ -1,0 +1,41 @@
+import { Meta } from "@storybook/blocks";
+
+<Meta title="Fundamentos/Introducao" />
+
+# EZFIT Design System
+
+Biblioteca de componentes React + TypeScript para dashboards de saude, dieta e treino.
+
+- **Estilo:** Tailwind v4 com CSS variables e variantes via CVA.
+- **Acessibilidade:** primitivos Radix UI (Dialog, Tabs, Switch, Slider, Select, Accordion, Tooltip, Toast).
+- **Graficos:** Recharts (Bar, Area, Donut) com tooltips e legendas proprias.
+- **Icones:** lucide-react, stroke 2px.
+
+## Uso em um app Vite + React
+
+```bash
+bun add @ezfit/ui
+```
+
+```tsx
+import "@ezfit/ui/styles.css";
+import { Button, StatCard, ToastProvider } from "@ezfit/ui";
+
+export function App() {
+  return (
+    <ToastProvider>
+      <Button variant="accent">Adicionar refeicao</Button>
+    </ToastProvider>
+  );
+}
+```
+
+## Tema claro / escuro
+
+O tema escuro e ativado adicionando a classe `dark` em um elemento ancestral (ex.: `<html class="dark">`).
+Os tokens semanticos (`background`, `card`, `foreground`, `border`, `ring`) trocam automaticamente.
+
+## Estrutura de tokens
+
+Os tokens vivem em `src/styles.css` (bloco `@theme`) e refletem 1:1 o design original.
+Constantes JS para uso em graficos estao em `@ezfit/ui` via `chartColors`, `colors`, `radius`.
