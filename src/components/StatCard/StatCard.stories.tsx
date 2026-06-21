@@ -46,6 +46,18 @@ export const Dark: Story = {
 	},
 };
 
+export const ComFooter: Story = {
+	args: {
+		variant: "accent",
+		icon: FireIcon,
+		label: "Calorias Queimadas",
+		value: 1763,
+		unit: "kcal",
+		trend: <Badge variant="pro">Ativo</Badge>,
+		footer: <span className="text-[13px] font-medium">TMB 1763 + treino 0</span>,
+	},
+};
+
 export const Grid: Story = {
 	render: () => (
 		<div className="grid w-[920px] grid-cols-4 gap-5">

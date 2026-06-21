@@ -25,6 +25,7 @@ export interface StatCardProps
 	unit?: string;
 	trend?: ReactNode;
 	progress?: { value: number; caption?: string; color?: string };
+	footer?: ReactNode;
 }
 
 const labelTone: Record<NonNullable<StatCardProps["variant"]>, string> = {
@@ -41,7 +42,19 @@ const defaultIconTone: Record<NonNullable<StatCardProps["variant"]>, IconTilePro
 
 export const StatCard = forwardRef<HTMLDivElement, StatCardProps>(
 	(
-		{ className, variant = "light", icon, iconTone, label, value, unit, trend, progress, ...props },
+		{
+			className,
+			variant = "light",
+			icon,
+			iconTone,
+			label,
+			value,
+			unit,
+			trend,
+			progress,
+			footer,
+			...props
+		},
 		ref,
 	) => {
 		const resolvedVariant = variant ?? "light";
@@ -78,6 +91,7 @@ export const StatCard = forwardRef<HTMLDivElement, StatCardProps>(
 						) : null}
 					</>
 				) : null}
+				{footer ? <div className="mt-[18px]">{footer}</div> : null}
 			</div>
 		);
 	},
