@@ -1,4 +1,5 @@
-import { User } from "lucide-react";
+import { UserIcon } from "@hugeicons/core-free-icons";
+import { HugeiconsIcon } from "@hugeicons/react";
 import { forwardRef, type ReactNode } from "react";
 import { cn } from "@/lib/cn";
 
@@ -21,7 +22,13 @@ export const ProfileCard = forwardRef<HTMLDivElement, ProfileCardProps>(
 		>
 			<div className="relative">
 				<div className="flex size-[46px] items-center justify-center overflow-hidden rounded-full bg-linear-[135deg,#BEF264,#A3E635]">
-					{avatar ?? <User className="size-[22px] text-accent-foreground" strokeWidth={2} />}
+					{avatar ?? (
+						<HugeiconsIcon
+							icon={UserIcon}
+							className="size-[22px] text-accent-foreground"
+							strokeWidth={2}
+						/>
+					)}
 				</div>
 				{online ? (
 					<span className="absolute right-px bottom-px size-3 rounded-full border-2 border-card bg-success" />

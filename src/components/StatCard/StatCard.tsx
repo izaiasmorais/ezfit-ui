@@ -1,5 +1,5 @@
+import type { IconSvgElement } from "@hugeicons/react";
 import { cva, type VariantProps } from "class-variance-authority";
-import type { LucideIcon } from "lucide-react";
 import { forwardRef, type ReactNode } from "react";
 import { cn } from "@/lib/cn";
 import { IconTile, type IconTileProps } from "../IconTile";
@@ -18,7 +18,7 @@ const statCardVariants = cva("rounded-card p-6", {
 export interface StatCardProps
 	extends React.HTMLAttributes<HTMLDivElement>,
 		VariantProps<typeof statCardVariants> {
-	icon: LucideIcon;
+	icon: IconSvgElement;
 	iconTone?: IconTileProps["tone"];
 	label: string;
 	value: ReactNode;

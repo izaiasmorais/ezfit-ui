@@ -1,10 +1,10 @@
-import type { LucideIcon } from "lucide-react";
+import type { IconSvgElement } from "@hugeicons/react";
 import { forwardRef, type ReactNode } from "react";
 import { cn } from "@/lib/cn";
 import { IconTile } from "../IconTile";
 
 export interface EmptyStateProps extends React.HTMLAttributes<HTMLDivElement> {
-	icon: LucideIcon;
+	icon: IconSvgElement;
 	title: string;
 	description?: string;
 	action?: ReactNode;

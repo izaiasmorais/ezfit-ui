@@ -1,5 +1,12 @@
+import {
+	Alert01Icon,
+	AlertCircleIcon,
+	Cancel01Icon,
+	CheckmarkCircle01Icon,
+	InformationCircleIcon,
+} from "@hugeicons/core-free-icons";
+import { HugeiconsIcon, type IconSvgElement } from "@hugeicons/react";
 import { cva, type VariantProps } from "class-variance-authority";
-import { AlertCircle, AlertTriangle, CheckCircle2, Info, type LucideIcon, X } from "lucide-react";
 import { forwardRef } from "react";
 import { cn } from "@/lib/cn";
 
@@ -17,12 +24,12 @@ const bannerVariants = cva("flex items-center gap-3.5 rounded-list border p-[15p
 
 const iconByVariant: Record<
 	NonNullable<VariantProps<typeof bannerVariants>["variant"]>,
-	LucideIcon
+	IconSvgElement
 > = {
-	success: CheckCircle2,
-	warning: AlertTriangle,
-	error: AlertCircle,
-	info: Info,
+	success: CheckmarkCircle01Icon,
+	warning: Alert01Icon,
+	error: AlertCircleIcon,
+	info: InformationCircleIcon,
 };
 
 const iconColor: Record<NonNullable<VariantProps<typeof bannerVariants>["variant"]>, string> = {
@@ -59,7 +66,11 @@ export const Banner = forwardRef<HTMLDivElement, BannerProps>(
 		const Icon = iconByVariant[resolved];
 		return (
 			<div ref={ref} role="alert" className={cn(bannerVariants({ variant }), className)} {...props}>
-				<Icon className={cn("size-5 flex-none", iconColor[resolved])} strokeWidth={2} />
+				<HugeiconsIcon
+					icon={Icon}
+					className={cn("size-5 flex-none", iconColor[resolved])}
+					strokeWidth={2}
+				/>
 				<div className="flex-1 text-sm">
 					{title ? (
 						<span className={cn("font-semibold", titleColor[resolved])}>{title} </span>
@@ -76,7 +87,7 @@ export const Banner = forwardRef<HTMLDivElement, BannerProps>(
 							iconColor[resolved],
 						)}
 					>
-						<X className="size-[17px]" />
+						<HugeiconsIcon icon={Cancel01Icon} className="size-[17px]" />
 					</button>
 				) : null}
 			</div>

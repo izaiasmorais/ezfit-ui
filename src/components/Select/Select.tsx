@@ -1,5 +1,6 @@
+import { ArrowDown01Icon, Tick02Icon } from "@hugeicons/core-free-icons";
+import { HugeiconsIcon } from "@hugeicons/react";
 import * as SelectPrimitive from "@radix-ui/react-select";
-import { Check, ChevronDown } from "lucide-react";
 import { forwardRef } from "react";
 import { cn } from "@/lib/cn";
 
@@ -22,7 +23,10 @@ export const SelectTrigger = forwardRef<
 	>
 		{children}
 		<SelectPrimitive.Icon asChild>
-			<ChevronDown className="size-4 text-muted-foreground transition-transform" />
+			<HugeiconsIcon
+				icon={ArrowDown01Icon}
+				className="size-4 text-muted-foreground transition-transform"
+			/>
 		</SelectPrimitive.Icon>
 	</SelectPrimitive.Trigger>
 ));
@@ -68,7 +72,7 @@ export const SelectItem = forwardRef<
 	>
 		<SelectPrimitive.ItemText>{children}</SelectPrimitive.ItemText>
 		<SelectPrimitive.ItemIndicator>
-			<Check className="size-4 text-accent-foreground" strokeWidth={3} />
+			<HugeiconsIcon icon={Tick02Icon} className="size-4 text-accent-foreground" strokeWidth={3} />
 		</SelectPrimitive.ItemIndicator>
 	</SelectPrimitive.Item>
 ));

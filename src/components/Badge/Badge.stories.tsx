@@ -1,5 +1,6 @@
+import { CrownIcon } from "@hugeicons/core-free-icons";
+import { HugeiconsIcon } from "@hugeicons/react";
 import type { Meta, StoryObj } from "@storybook/react";
-import { Crown } from "lucide-react";
 import { Badge } from "./Badge";
 
 const meta = {
@@ -24,7 +25,7 @@ export const Pro: Story = {
 		variant: "pro",
 		children: (
 			<>
-				<Crown className="size-3" />
+				<HugeiconsIcon icon={CrownIcon} className="size-3" />
 				Pro Member
 			</>
 		),
@@ -37,7 +38,7 @@ export const Gallery: Story = {
 			<Badge variant="active">Active</Badge>
 			<Badge variant="info">+250ml</Badge>
 			<Badge variant="pro">
-				<Crown className="size-3" />
+				<HugeiconsIcon icon={CrownIcon} className="size-3" />
 				Pro Member
 			</Badge>
 			<Badge variant="success">Completo</Badge>

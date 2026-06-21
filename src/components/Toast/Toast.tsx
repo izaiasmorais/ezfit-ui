@@ -1,12 +1,13 @@
+import { Cancel01Icon, Tick02Icon } from "@hugeicons/core-free-icons";
+import { HugeiconsIcon, type IconSvgElement } from "@hugeicons/react";
 import * as ToastPrimitive from "@radix-ui/react-toast";
-import { Check, type LucideIcon, X } from "lucide-react";
 import { createContext, type ReactNode, useCallback, useContext, useMemo, useState } from "react";
 import { cn } from "@/lib/cn";
 
 export interface ToastOptions {
 	title: string;
 	description?: string;
-	icon?: LucideIcon;
+	icon?: IconSvgElement;
 	duration?: number;
 }
 
@@ -54,7 +55,7 @@ export function ToastProvider({ children, duration = 3600 }: ToastProviderProps)
 			<ToastPrimitive.Provider duration={duration} swipeDirection="right">
 				{children}
 				{toasts.map((entry) => {
-					const Icon = entry.icon ?? Check;
+					const Icon = entry.icon ?? Tick02Icon;
 					return (
 						<ToastPrimitive.Root
 							key={entry.id}
@@ -64,7 +65,7 @@ export function ToastProvider({ children, duration = 3600 }: ToastProviderProps)
 							className="flex items-center gap-3.5 rounded-list bg-primary px-[18px] py-[15px] text-primary-foreground shadow-[0_16px_40px_rgba(15,23,42,0.35)] data-[state=open]:animate-toast-in"
 						>
 							<div className="flex size-[38px] flex-none items-center justify-center rounded-[12px] bg-accent/20">
-								<Icon className="size-[19px] text-accent" strokeWidth={3} />
+								<HugeiconsIcon icon={Icon} className="size-[19px] text-accent" strokeWidth={3} />
 							</div>
 							<div className="flex-1">
 								<ToastPrimitive.Title className="text-sm font-semibold">
@@ -80,7 +81,7 @@ export function ToastProvider({ children, duration = 3600 }: ToastProviderProps)
 								aria-label="Fechar"
 								className="flex-none cursor-pointer text-muted-foreground transition-colors hover:text-primary-foreground"
 							>
-								<X className="size-[17px]" />
+								<HugeiconsIcon icon={Cancel01Icon} className="size-[17px]" />
 							</ToastPrimitive.Close>
 						</ToastPrimitive.Root>
 					);

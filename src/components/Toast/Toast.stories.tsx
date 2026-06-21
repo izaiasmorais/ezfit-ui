@@ -1,5 +1,5 @@
+import { Tick02Icon } from "@hugeicons/core-free-icons";
 import type { Meta, StoryObj } from "@storybook/react";
-import { Check } from "lucide-react";
 import { Button } from "../Button";
 import { ToastProvider, useToast } from "./Toast";
 
@@ -27,7 +27,7 @@ function Demo() {
 				toast({
 					title: "Treino registrado",
 					description: "Sua sessao de cardio foi salva.",
-					icon: Check,
+					icon: Tick02Icon,
 				})
 			}
 		>

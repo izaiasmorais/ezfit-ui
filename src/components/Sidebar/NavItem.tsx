@@ -1,9 +1,9 @@
-import type { LucideIcon } from "lucide-react";
+import { HugeiconsIcon, type IconSvgElement } from "@hugeicons/react";
 import { forwardRef } from "react";
 import { cn } from "@/lib/cn";
 
 export interface NavItemProps extends React.HTMLAttributes<HTMLButtonElement> {
-	icon: LucideIcon;
+	icon: IconSvgElement;
 	label: string;
 	active?: boolean;
 }
@@ -23,7 +23,7 @@ export const NavItem = forwardRef<HTMLButtonElement, NavItemProps>(
 			)}
 			{...props}
 		>
-			<Icon className="size-[19px] flex-none" strokeWidth={2} />
+			<HugeiconsIcon icon={Icon} className="size-[19px] flex-none" strokeWidth={2} />
 			<span>{label}</span>
 		</button>
 	),

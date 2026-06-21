@@ -1,5 +1,6 @@
+import { Loading03Icon } from "@hugeicons/core-free-icons";
+import { HugeiconsIcon } from "@hugeicons/react";
 import { cva, type VariantProps } from "class-variance-authority";
-import { Loader2 } from "lucide-react";
 import { forwardRef } from "react";
 import { cn } from "@/lib/cn";
 
@@ -46,7 +47,11 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
 				disabled={disabled || loading}
 				{...props}
 			>
-				{loading ? <Loader2 className="size-[18px] animate-spin-slow" /> : children}
+				{loading ? (
+					<HugeiconsIcon icon={Loading03Icon} className="size-[18px] animate-spin-slow" />
+				) : (
+					children
+				)}
 			</button>
 		);
 	},

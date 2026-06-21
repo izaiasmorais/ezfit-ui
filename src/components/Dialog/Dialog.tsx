@@ -1,5 +1,6 @@
+import { Cancel01Icon } from "@hugeicons/core-free-icons";
+import { HugeiconsIcon } from "@hugeicons/react";
 import * as DialogPrimitive from "@radix-ui/react-dialog";
-import { X } from "lucide-react";
 import { forwardRef } from "react";
 import { cn } from "@/lib/cn";
 
@@ -49,7 +50,7 @@ export const DialogContent = forwardRef<
 						className="absolute top-[30px] right-[30px] flex size-[34px] cursor-pointer items-center justify-center rounded-[11px] bg-secondary text-muted-foreground transition-colors hover:bg-secondary-hover outline-none focus-visible:ring-3 focus-visible:ring-ring/25"
 						aria-label="Fechar"
 					>
-						<X className="size-[18px]" />
+						<HugeiconsIcon icon={Cancel01Icon} className="size-[18px]" />
 					</DialogPrimitive.Close>
 				) : null}
 			</DialogPrimitive.Content>

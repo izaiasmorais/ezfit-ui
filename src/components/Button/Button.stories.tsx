@@ -1,5 +1,6 @@
+import { Add01Icon, Settings01Icon } from "@hugeicons/core-free-icons";
+import { HugeiconsIcon } from "@hugeicons/react";
 import type { Meta, StoryObj } from "@storybook/react";
-import { Plus, Settings } from "lucide-react";
 import { Button } from "./Button";
 
 const meta = {
@@ -29,7 +30,7 @@ export const WithIcon: Story = {
 	args: {
 		children: (
 			<>
-				<Plus className="size-[17px]" />
+				<HugeiconsIcon icon={Add01Icon} className="size-[17px]" />
 				Com icone
 			</>
 		),
@@ -37,7 +38,11 @@ export const WithIcon: Story = {
 };
 
 export const IconOnly: Story = {
-	args: { size: "icon", variant: "secondary", children: <Settings className="size-[19px]" /> },
+	args: {
+		size: "icon",
+		variant: "secondary",
+		children: <HugeiconsIcon icon={Settings01Icon} className="size-[19px]" />,
+	},
 };
 
 export const Disabled: Story = {
@@ -54,11 +59,11 @@ export const AllVariants: Story = {
 			<Button variant="ghost">Ghost</Button>
 			<Button variant="destructive">Destructive</Button>
 			<Button>
-				<Plus className="size-[17px]" />
+				<HugeiconsIcon icon={Add01Icon} className="size-[17px]" />
 				Com icone
 			</Button>
 			<Button size="icon" variant="secondary">
-				<Settings className="size-[19px]" />
+				<HugeiconsIcon icon={Settings01Icon} className="size-[19px]" />
 			</Button>
 			<Button variant="secondary" disabled>
 				Disabled

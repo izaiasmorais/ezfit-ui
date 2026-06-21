@@ -1,23 +1,23 @@
-import type { Meta, StoryObj } from "@storybook/react";
 import {
-	Apple,
-	Bell,
-	Calendar,
-	Check,
-	Droplet,
-	Dumbbell,
-	Flame,
-	HeartPulse,
-	LayoutGrid,
-	type LucideIcon,
-	Plus,
-	Search,
-	Settings,
-	Timer,
-	TrendingUp,
-	User,
-	Utensils,
-} from "lucide-react";
+	Activity01Icon,
+	Add01Icon,
+	Apple01Icon,
+	Calendar03Icon,
+	ChartUpIcon,
+	DashboardSquare01Icon,
+	DropletIcon,
+	Dumbbell01Icon,
+	FireIcon,
+	Notification03Icon,
+	Restaurant02Icon,
+	Search01Icon,
+	Settings01Icon,
+	Tick02Icon,
+	Timer01Icon,
+	UserIcon,
+} from "@hugeicons/core-free-icons";
+import { HugeiconsIcon, type IconSvgElement } from "@hugeicons/react";
+import type { Meta, StoryObj } from "@storybook/react";
 
 const meta: Meta = {
 	title: "Fundamentos/Icones",
@@ -27,30 +27,30 @@ const meta: Meta = {
 export default meta;
 type Story = StoryObj;
 
-const icons: { icon: LucideIcon; label: string }[] = [
-	{ icon: LayoutGrid, label: "dashboard" },
-	{ icon: Utensils, label: "dieta" },
-	{ icon: Dumbbell, label: "treino" },
-	{ icon: Droplet, label: "hidratacao" },
-	{ icon: Flame, label: "calorias" },
-	{ icon: Timer, label: "tempo" },
-	{ icon: HeartPulse, label: "cardio" },
-	{ icon: Settings, label: "ajustes" },
-	{ icon: Calendar, label: "data" },
-	{ icon: TrendingUp, label: "tendencia" },
-	{ icon: Bell, label: "alertas" },
-	{ icon: Search, label: "buscar" },
-	{ icon: Check, label: "concluido" },
-	{ icon: Plus, label: "adicionar" },
-	{ icon: User, label: "perfil" },
-	{ icon: Apple, label: "nutricao" },
+const icons: { icon: IconSvgElement; label: string }[] = [
+	{ icon: DashboardSquare01Icon, label: "dashboard" },
+	{ icon: Restaurant02Icon, label: "dieta" },
+	{ icon: Dumbbell01Icon, label: "treino" },
+	{ icon: DropletIcon, label: "hidratacao" },
+	{ icon: FireIcon, label: "calorias" },
+	{ icon: Timer01Icon, label: "tempo" },
+	{ icon: Activity01Icon, label: "cardio" },
+	{ icon: Settings01Icon, label: "ajustes" },
+	{ icon: Calendar03Icon, label: "data" },
+	{ icon: ChartUpIcon, label: "tendencia" },
+	{ icon: Notification03Icon, label: "alertas" },
+	{ icon: Search01Icon, label: "buscar" },
+	{ icon: Tick02Icon, label: "concluido" },
+	{ icon: Add01Icon, label: "adicionar" },
+	{ icon: UserIcon, label: "perfil" },
+	{ icon: Apple01Icon, label: "nutricao" },
 ];
 
 export const Library: Story = {
 	render: () => (
 		<div className="max-w-[920px] rounded-card bg-card p-7 shadow-card">
 			<h3 className="mb-1 font-mono text-xs tracking-widest text-muted-foreground uppercase">
-				Icones - lucide - stroke 2px
+				Icones - hugeicons - stroke 2px
 			</h3>
 			<p className="mb-6 text-[13px] text-subtle-foreground">Conjunto de linha, traco uniforme.</p>
 			<div className="grid grid-cols-8 gap-4">
@@ -59,7 +59,7 @@ export const Library: Story = {
 						key={label}
 						className="flex flex-col items-center gap-2 rounded-[16px] bg-muted px-2 py-4"
 					>
-						<Icon className="size-6 text-foreground" strokeWidth={2} />
+						<HugeiconsIcon icon={Icon} className="size-6 text-foreground" strokeWidth={2} />
 						<span className="text-[11px] text-muted-foreground">{label}</span>
 					</div>
 				))}

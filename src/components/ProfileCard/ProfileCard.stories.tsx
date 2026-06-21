@@ -1,5 +1,6 @@
+import { CrownIcon } from "@hugeicons/core-free-icons";
+import { HugeiconsIcon } from "@hugeicons/react";
 import type { Meta, StoryObj } from "@storybook/react";
-import { Crown } from "lucide-react";
 import { Badge } from "../Badge";
 import { ProfileCard } from "./ProfileCard";
 
@@ -17,7 +18,7 @@ export const Default: Story = {
 	args: {
 		badge: (
 			<Badge variant="pro">
-				<Crown className="size-3" />
+				<HugeiconsIcon icon={CrownIcon} className="size-3" />
 				Pro Member
 			</Badge>
 		),

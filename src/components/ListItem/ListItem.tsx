@@ -1,10 +1,10 @@
-import type { LucideIcon } from "lucide-react";
+import type { IconSvgElement } from "@hugeicons/react";
 import { forwardRef, type ReactNode } from "react";
 import { cn } from "@/lib/cn";
 import { IconTile, type IconTileProps } from "../IconTile";
 
 export interface ListItemProps extends React.HTMLAttributes<HTMLDivElement> {
-	icon: LucideIcon;
+	icon: IconSvgElement;
 	iconTone?: IconTileProps["tone"];
 	title: string;
 	subtitle?: string;

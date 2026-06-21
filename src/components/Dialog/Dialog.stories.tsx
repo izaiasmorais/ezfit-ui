@@ -1,5 +1,5 @@
+import { Delete02Icon } from "@hugeicons/core-free-icons";
 import type { Meta, StoryObj } from "@storybook/react";
-import { Trash2 } from "lucide-react";
 import { Button } from "../Button";
 import { IconTile } from "../IconTile";
 import {
@@ -29,7 +29,7 @@ export const Confirm: Story = {
 			</DialogTrigger>
 			<DialogContent>
 				<DialogHeader>
-					<IconTile icon={Trash2} tone="error" size="lg" />
+					<IconTile icon={Delete02Icon} tone="error" size="lg" />
 				</DialogHeader>
 				<DialogTitle>Excluir registro?</DialogTitle>
 				<DialogDescription>

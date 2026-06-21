@@ -1,12 +1,17 @@
+import {
+	DropletIcon,
+	Dumbbell01Icon,
+	FireIcon,
+	Restaurant02Icon,
+} from "@hugeicons/core-free-icons";
 import type { Meta, StoryObj } from "@storybook/react";
-import { Droplet, Dumbbell, Flame, Utensils } from "lucide-react";
 import { IconTile } from "./IconTile";
 
 const meta = {
 	title: "Primitivos/IconTile",
 	component: IconTile,
 	tags: ["autodocs"],
-	args: { icon: Flame, tone: "fat", size: "md" },
+	args: { icon: FireIcon, tone: "fat", size: "md" },
 	argTypes: {
 		tone: {
 			control: "select",
@@ -35,11 +40,11 @@ export const Default: Story = {};
 export const Tones: Story = {
 	render: () => (
 		<div className="flex gap-4">
-			<IconTile icon={Utensils} tone="fat" />
-			<IconTile icon={Droplet} tone="protein" />
-			<IconTile icon={Dumbbell} tone="neutral" />
-			<IconTile icon={Flame} tone="cardio" />
-			<IconTile icon={Flame} tone="accent" />
+			<IconTile icon={Restaurant02Icon} tone="fat" />
+			<IconTile icon={DropletIcon} tone="protein" />
+			<IconTile icon={Dumbbell01Icon} tone="neutral" />
+			<IconTile icon={FireIcon} tone="cardio" />
+			<IconTile icon={FireIcon} tone="accent" />
 		</div>
 	),
 };
@@ -47,10 +52,10 @@ export const Tones: Story = {
 export const Sizes: Story = {
 	render: () => (
 		<div className="flex items-center gap-4">
-			<IconTile icon={Flame} tone="fat" size="sm" />
-			<IconTile icon={Flame} tone="fat" size="md" />
-			<IconTile icon={Flame} tone="fat" size="lg" />
-			<IconTile icon={Flame} tone="fat" size="xl" />
+			<IconTile icon={FireIcon} tone="fat" size="sm" />
+			<IconTile icon={FireIcon} tone="fat" size="md" />
+			<IconTile icon={FireIcon} tone="fat" size="lg" />
+			<IconTile icon={FireIcon} tone="fat" size="xl" />
 		</div>
 	),
 };

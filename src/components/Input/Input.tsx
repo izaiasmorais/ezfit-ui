@@ -1,4 +1,4 @@
-import type { LucideIcon } from "lucide-react";
+import { HugeiconsIcon, type IconSvgElement } from "@hugeicons/react";
 import { forwardRef, useId } from "react";
 import { cn } from "@/lib/cn";
 
@@ -6,7 +6,7 @@ export interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> 
 	label?: string;
 	error?: string;
 	hint?: string;
-	startIcon?: LucideIcon;
+	startIcon?: IconSvgElement;
 	suffix?: string;
 }
 
@@ -40,7 +40,11 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
 				) : null}
 				<div className={wrapper}>
 					{StartIcon ? (
-						<StartIcon className="size-[17px] text-subtle-foreground" strokeWidth={2} />
+						<HugeiconsIcon
+							icon={StartIcon}
+							className="size-[17px] text-subtle-foreground"
+							strokeWidth={2}
+						/>
 					) : null}
 					<input
 						ref={ref}

@@ -1,5 +1,5 @@
+import { HugeiconsIcon, type IconSvgElement } from "@hugeicons/react";
 import { cva, type VariantProps } from "class-variance-authority";
-import type { LucideIcon } from "lucide-react";
 import { forwardRef } from "react";
 import { cn } from "@/lib/cn";
 
@@ -39,13 +39,13 @@ const iconSizeMap: Record<NonNullable<VariantProps<typeof iconTileVariants>["siz
 export interface IconTileProps
 	extends React.HTMLAttributes<HTMLDivElement>,
 		VariantProps<typeof iconTileVariants> {
-	icon: LucideIcon;
+	icon: IconSvgElement;
 }
 
 export const IconTile = forwardRef<HTMLDivElement, IconTileProps>(
 	({ className, tone, size = "md", icon: Icon, ...props }, ref) => (
 		<div ref={ref} className={cn(iconTileVariants({ tone, size }), className)} {...props}>
-			<Icon className={iconSizeMap[size ?? "md"]} strokeWidth={2} />
+			<HugeiconsIcon icon={Icon} className={iconSizeMap[size ?? "md"]} strokeWidth={2} />
 		</div>
 	),
 );

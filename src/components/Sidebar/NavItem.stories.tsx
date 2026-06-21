@@ -1,12 +1,12 @@
+import { Dumbbell01Icon } from "@hugeicons/core-free-icons";
 import type { Meta, StoryObj } from "@storybook/react";
-import { Dumbbell } from "lucide-react";
 import { NavItem } from "./NavItem";
 
 const meta = {
 	title: "Layout/NavItem",
 	component: NavItem,
 	tags: ["autodocs"],
-	args: { icon: Dumbbell, label: "Workouts" },
+	args: { icon: Dumbbell01Icon, label: "Workouts" },
 } satisfies Meta<typeof NavItem>;
 
 export default meta;
@@ -18,8 +18,8 @@ export const Active: Story = { args: { active: true } };
 export const States: Story = {
 	render: () => (
 		<div className="flex w-56 flex-col gap-2">
-			<NavItem icon={Dumbbell} label="Default" />
-			<NavItem icon={Dumbbell} label="Active" active />
+			<NavItem icon={Dumbbell01Icon} label="Default" />
+			<NavItem icon={Dumbbell01Icon} label="Active" active />
 		</div>
 	),
 };

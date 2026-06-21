@@ -1,5 +1,6 @@
+import { Tick02Icon } from "@hugeicons/core-free-icons";
+import { HugeiconsIcon } from "@hugeicons/react";
 import * as CheckboxPrimitive from "@radix-ui/react-checkbox";
-import { Check } from "lucide-react";
 import { forwardRef, useId } from "react";
 import { cn } from "@/lib/cn";
 
@@ -27,7 +28,11 @@ export const Checkbox = forwardRef<React.ElementRef<typeof CheckboxPrimitive.Roo
 				{...props}
 			>
 				<CheckboxPrimitive.Indicator>
-					<Check className="size-[15px] text-accent-foreground" strokeWidth={3} />
+					<HugeiconsIcon
+						icon={Tick02Icon}
+						className="size-[15px] text-accent-foreground"
+						strokeWidth={3}
+					/>
 				</CheckboxPrimitive.Indicator>
 			</CheckboxPrimitive.Root>
 		);

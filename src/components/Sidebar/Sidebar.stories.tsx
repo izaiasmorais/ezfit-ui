@@ -1,5 +1,11 @@
+import {
+	DashboardSquare01Icon,
+	DropletIcon,
+	Dumbbell01Icon,
+	Restaurant02Icon,
+	Settings01Icon,
+} from "@hugeicons/core-free-icons";
 import type { Meta, StoryObj } from "@storybook/react";
-import { Droplet, Dumbbell, LayoutGrid, Settings, Utensils } from "lucide-react";
 import { useState } from "react";
 import { NavItem } from "./NavItem";
 import { Sidebar, SidebarBrand, SidebarSection } from "./Sidebar";
@@ -14,10 +20,10 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 const mainItems = [
-	{ key: "dashboard", icon: LayoutGrid, label: "Dashboard" },
-	{ key: "diet", icon: Utensils, label: "Diet & Meals" },
-	{ key: "workouts", icon: Dumbbell, label: "Workouts" },
-	{ key: "hydration", icon: Droplet, label: "Hydration" },
+	{ key: "dashboard", icon: DashboardSquare01Icon, label: "Dashboard" },
+	{ key: "diet", icon: Restaurant02Icon, label: "Diet & Meals" },
+	{ key: "workouts", icon: Dumbbell01Icon, label: "Workouts" },
+	{ key: "hydration", icon: DropletIcon, label: "Hydration" },
 ];
 
 export const Default: Story = {
@@ -39,7 +45,7 @@ export const Default: Story = {
 				</SidebarSection>
 				<SidebarSection label="System">
 					<NavItem
-						icon={Settings}
+						icon={Settings01Icon}
 						label="Settings"
 						active={active === "settings"}
 						onClick={() => setActive("settings")}

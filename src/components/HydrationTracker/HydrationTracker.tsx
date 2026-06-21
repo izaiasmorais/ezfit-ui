@@ -1,4 +1,5 @@
-import { Droplet } from "lucide-react";
+import { DropletIcon } from "@hugeicons/core-free-icons";
+import { HugeiconsIcon } from "@hugeicons/react";
 import { forwardRef } from "react";
 import { cn } from "@/lib/cn";
 
@@ -29,7 +30,8 @@ export const HydrationTracker = forwardRef<HTMLDivElement, HydrationTrackerProps
 								isFilled ? "bg-protein" : "bg-info-bg",
 							)}
 						>
-							<Droplet
+							<HugeiconsIcon
+								icon={DropletIcon}
 								className={cn("size-[18px]", isFilled ? "text-white" : "text-[#BFDBFE]")}
 								strokeWidth={2}
 							/>

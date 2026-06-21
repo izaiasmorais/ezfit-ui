@@ -1,5 +1,6 @@
+import { ArrowDown01Icon } from "@hugeicons/core-free-icons";
+import { HugeiconsIcon } from "@hugeicons/react";
 import * as AccordionPrimitive from "@radix-ui/react-accordion";
-import { ChevronDown } from "lucide-react";
 import { forwardRef } from "react";
 import { cn } from "@/lib/cn";
 
@@ -31,7 +32,10 @@ export const AccordionTrigger = forwardRef<
 			{...props}
 		>
 			{children}
-			<ChevronDown className="size-[18px] flex-none text-subtle-foreground transition-transform group-data-[state=open]:rotate-180" />
+			<HugeiconsIcon
+				icon={ArrowDown01Icon}
+				className="size-[18px] flex-none text-subtle-foreground transition-transform group-data-[state=open]:rotate-180"
+			/>
 		</AccordionPrimitive.Trigger>
 	</AccordionPrimitive.Header>
 ));

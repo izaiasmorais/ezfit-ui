@@ -1,4 +1,5 @@
-import { TrendingDown, TrendingUp } from "lucide-react";
+import { ChartDownIcon, ChartUpIcon } from "@hugeicons/core-free-icons";
+import { HugeiconsIcon } from "@hugeicons/react";
 import { forwardRef } from "react";
 import { cn } from "@/lib/cn";
 
@@ -14,7 +15,7 @@ export interface TrendItemProps extends React.HTMLAttributes<HTMLDivElement> {
 export const TrendItem = forwardRef<HTMLDivElement, TrendItemProps>(
 	({ className, label, delta, direction, positiveIsUp = true, ...props }, ref) => {
 		const isPositive = direction === "up" ? positiveIsUp : !positiveIsUp;
-		const Icon = direction === "up" ? TrendingUp : TrendingDown;
+		const Icon = direction === "up" ? ChartUpIcon : ChartDownIcon;
 		return (
 			<div ref={ref} className={cn("flex items-center justify-between", className)} {...props}>
 				<span className="text-sm font-semibold">{label}</span>
@@ -24,7 +25,7 @@ export const TrendItem = forwardRef<HTMLDivElement, TrendItemProps>(
 						isPositive ? "text-success" : "text-error",
 					)}
 				>
-					<Icon className="size-4" />
+					<HugeiconsIcon icon={Icon} className="size-4" />
 					{delta}
 				</span>
 			</div>
