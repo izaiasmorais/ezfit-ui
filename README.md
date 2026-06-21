@@ -1,6 +1,6 @@
 # @ezfit/ui
 
-Design system EZFIT em React + TypeScript para dashboards de saude, dieta e treino. Estilizado com Tailwind v4 (CSS variables + CVA), acessibilidade via Radix UI, graficos com Recharts e icones lucide-react.
+Design system EZFIT em React + TypeScript para dashboards de saude, dieta e treino. Estilizado com Tailwind v4 (CSS variables + CVA), acessibilidade via Radix UI, graficos com Recharts e icones hugeicons.
 
 ## Desenvolvimento
 
