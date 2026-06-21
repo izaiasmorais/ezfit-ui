@@ -4,6 +4,10 @@
 	"description": "EZFIT Design System - biblioteca de componentes React para dashboards de saude, dieta e treino",
 	"type": "module",
 	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/izaiasmorais/ezfit-ui.git"
+	},
 	"sideEffects": [
 		"**/*.css"
 	],
