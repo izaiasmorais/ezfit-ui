@@ -30,6 +30,9 @@
 		"lint": "biome lint",
 		"format": "biome format --write"
 	},
+	"publishConfig": {
+		"access": "public"
+	},
 	"peerDependencies": {
 		"react": ">=18",
 		"react-dom": ">=18"
