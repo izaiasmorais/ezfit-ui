@@ -58,6 +58,7 @@ export const Scale: Story = {
 					{ w: "font-medium", l: "Medium - 500" },
 					{ w: "font-semibold", l: "SemiBold - 600" },
 					{ w: "font-bold", l: "Bold - 700" },
+					{ w: "font-extrabold", l: "ExtraBold - 800" },
 				].map((weight) => (
 					<div key={weight.l}>
 						<div className={`text-[30px] ${weight.w}`}>Aa</div>

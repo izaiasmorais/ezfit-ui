@@ -23,7 +23,7 @@ export const EmptyState = forwardRef<HTMLDivElement, EmptyStateProps>(
 			<IconTile icon={icon} tone="neutral" size="xl" className="mb-5 text-subtle-foreground" />
 			<h3 className="mb-1.5 text-lg font-bold">{title}</h3>
 			{description ? (
-				<p className="mb-[22px] max-w-[340px] text-sm leading-relaxed text-subtle-foreground">
+				<p className="mb-[22px] max-w-[340px] text-sm leading-relaxed text-muted-foreground">
 					{description}
 				</p>
 			) : null}

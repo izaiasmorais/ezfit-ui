@@ -7,8 +7,8 @@ export const badgeVariants = cva(
 	{
 		variants: {
 			variant: {
-				active: "bg-accent-300 text-accent-foreground",
-				pro: "bg-accent-300 text-accent-muted-foreground",
+				active: "bg-accent-300 text-accent",
+				pro: "bg-white/20 text-white",
 				info: "bg-info-bg text-info",
 				success: "bg-success-bg text-success",
 				warning: "bg-warning-bg text-warning",

@@ -1,37 +1,38 @@
-@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap");
 @import "tailwindcss";
 
 @custom-variant dark (&:where(.dark, .dark *));
 
 :root {
-	--app-bg: #eef1f5;
+	--app-bg: #f4f6fa;
 
 	--background: #ffffff;
-	--foreground: #1e293b;
+	--foreground: #16181d;
 	--card: #ffffff;
-	--card-foreground: #1e293b;
+	--card-foreground: #16181d;
 
-	--primary: #1e293b;
-	--primary-hover: #0f172a;
+	--primary: #16181d;
+	--primary-hover: #0b0c10;
 	--primary-foreground: #ffffff;
 
-	--accent: #a3e635;
-	--accent-300: #bef264;
-	--accent-foreground: #1e293b;
-	--accent-muted-foreground: #3f4d2a;
+	--accent: #2b4bf2;
+	--accent-hover: #2540da;
+	--accent-300: #e8ecfd;
+	--accent-foreground: #ffffff;
+	--accent-muted-foreground: rgba(255, 255, 255, 0.8);
 
-	--secondary: #f1f5f9;
-	--secondary-hover: #e2e8f0;
-	--secondary-foreground: #0f172a;
+	--secondary: #eef0f4;
+	--secondary-hover: #e2e5ec;
+	--secondary-foreground: #16181d;
 
-	--muted: #f8fafc;
-	--muted-foreground: #64748b;
-	--subtle-foreground: #94a3b8;
+	--muted: #f5f7fa;
+	--muted-foreground: #6b7280;
+	--subtle-foreground: #8b93a2;
 
-	--border: #e2e8f0;
-	--border-soft: #f1f5f9;
-	--input: #e2e8f0;
-	--ring: #1e293b;
+	--border: #e5e7eb;
+	--border-soft: #eef0f4;
+	--input: #e5e7eb;
+	--ring: #2b4bf2;
 
 	--success: #22c55e;
 	--success-bg: #f0fdf4;
@@ -39,18 +40,18 @@
 	--warning: #f59e0b;
 	--warning-bg: #fffbeb;
 	--warning-border: #fde68a;
-	--error: #ef4444;
-	--error-bg: #fef2f2;
-	--error-border: #fecaca;
-	--info: #3b82f6;
-	--info-bg: #eff6ff;
-	--info-border: #bfdbfe;
+	--error: #f23b47;
+	--error-bg: #fce8ea;
+	--error-border: #f7cdd2;
+	--info: #2b4bf2;
+	--info-bg: #e8ecfd;
+	--info-border: #c9d4fb;
 
-	--protein: #3b82f6;
-	--protein-bg: #eff6ff;
-	--carbs: #eab308;
-	--carbs-text: #ca8a04;
-	--carbs-bg: #fefce8;
+	--protein: #2b4bf2;
+	--protein-bg: #e8ecfd;
+	--carbs: #c4c9d2;
+	--carbs-text: #6b7280;
+	--carbs-bg: #eef0f4;
 	--fat: #f97316;
 	--fat-bg: #fff7ed;
 	--cardio: #22c55e;
@@ -58,22 +59,23 @@
 }
 
 .dark {
-	--app-bg: #0f172a;
-	--background: #0f172a;
-	--foreground: #f8fafc;
-	--card: #1e293b;
-	--card-foreground: #f8fafc;
+	--app-bg: #0d0e12;
+	--background: #0d0e12;
+	--foreground: #f5f7fa;
+	--card: #16181d;
+	--card-foreground: #f5f7fa;
 
-	--secondary: #1e293b;
-	--secondary-hover: #334155;
-	--secondary-foreground: #f8fafc;
-	--muted: #1e293b;
-	--muted-foreground: #94a3b8;
+	--secondary: #1d2027;
+	--secondary-hover: #262a33;
+	--secondary-foreground: #f5f7fa;
+	--muted: #16181d;
+	--muted-foreground: #9aa3b2;
+	--subtle-foreground: #7e8694;
 
 	--border: rgba(255, 255, 255, 0.1);
 	--border-soft: rgba(255, 255, 255, 0.06);
 	--input: rgba(255, 255, 255, 0.14);
-	--ring: #a3e635;
+	--ring: #2b4bf2;
 }
 
 @theme inline {
@@ -88,6 +90,7 @@
   --color-primary-foreground: var(--primary-foreground);
 
   --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
   --color-accent-300: var(--accent-300);
   --color-accent-foreground: var(--accent-foreground);
   --color-accent-muted-foreground: var(--accent-muted-foreground);
@@ -128,15 +131,15 @@
   --color-cardio: var(--cardio);
   --color-cardio-bg: var(--cardio-bg);
 
-  --font-sans: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Manrope", ui-sans-serif, system-ui, sans-serif;
   --font-mono: "Space Mono", ui-monospace, monospace;
 
   --radius-input: 8px;
-  --radius-field: 12px;
-  --radius-button: 14px;
-  --radius-list: 16px;
-  --radius-tile: 18px;
-  --radius-card: 24px;
+  --radius-field: 10px;
+  --radius-button: 10px;
+  --radius-list: 12px;
+  --radius-tile: 14px;
+  --radius-card: 16px;
   --radius-pill: 999px;
 
   --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.06);
@@ -144,7 +147,7 @@
   --shadow-lg: 0 8px 24px rgba(15, 23, 42, 0.1);
   --shadow-xl: 0 18px 48px rgba(15, 23, 42, 0.16);
   --shadow-card: 0 1px 2px rgba(15, 23, 42, 0.04), 0 8px 24px rgba(15, 23, 42, 0.05);
-  --shadow-accent: 0 12px 40px rgba(163, 230, 53, 0.28);
+  --shadow-accent: 0 12px 40px rgba(43, 75, 242, 0.22);
   --shadow-dark: 0 12px 40px rgba(15, 23, 42, 0.18);
 
   --animate-spin-slow: ezspin 0.9s linear infinite;

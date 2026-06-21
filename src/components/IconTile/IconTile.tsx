@@ -16,8 +16,8 @@ export const iconTileVariants = cva("flex flex-none items-center justify-center"
 			error: "bg-error-bg text-error",
 			info: "bg-info-bg text-info",
 			accent: "bg-accent text-accent-foreground",
-			onDark: "bg-white/10 text-accent",
-			onAccent: "bg-primary/10 text-primary",
+			onDark: "bg-white/10 text-white",
+			onAccent: "bg-white/15 text-white",
 		},
 		size: {
 			sm: "size-[34px] rounded-[10px]",

@@ -21,7 +21,7 @@ export const ProfileCard = forwardRef<HTMLDivElement, ProfileCardProps>(
 			{...props}
 		>
 			<div className="relative">
-				<div className="flex size-[46px] items-center justify-center overflow-hidden rounded-full bg-linear-[135deg,#BEF264,#A3E635]">
+				<div className="flex size-[46px] items-center justify-center overflow-hidden rounded-full bg-linear-[135deg,#5B77FF,#2B4BF2]">
 					{avatar ?? (
 						<HugeiconsIcon
 							icon={UserIcon}

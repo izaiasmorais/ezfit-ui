@@ -20,9 +20,11 @@ const spacing = [
 
 const radii = [
 	{ token: "radius-input", value: "8px" },
-	{ token: "radius-field", value: "12px" },
-	{ token: "radius-button", value: "14px" },
-	{ token: "radius-card", value: "24px" },
+	{ token: "radius-field", value: "10px" },
+	{ token: "radius-button", value: "10px" },
+	{ token: "radius-list", value: "12px" },
+	{ token: "radius-tile", value: "14px" },
+	{ token: "radius-card", value: "16px" },
 	{ token: "radius-pill", value: "9999px" },
 ];
 

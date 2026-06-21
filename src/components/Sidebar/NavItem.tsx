@@ -15,9 +15,9 @@ export const NavItem = forwardRef<HTMLButtonElement, NavItemProps>(
 			type="button"
 			aria-current={active ? "page" : undefined}
 			className={cn(
-				"flex w-full cursor-pointer items-center gap-3 rounded-pill px-4 py-[13px] text-left font-sans text-sm font-semibold transition-colors outline-none focus-visible:ring-3 focus-visible:ring-ring/25",
+				"flex w-full cursor-pointer items-center gap-3 rounded-list px-4 py-[13px] text-left font-sans text-sm font-semibold transition-colors outline-none focus-visible:ring-3 focus-visible:ring-ring/25",
 				active
-					? "bg-primary text-primary-foreground"
+					? "bg-accent text-accent-foreground"
 					: "text-muted-foreground hover:bg-secondary hover:text-foreground",
 				className,
 			)}

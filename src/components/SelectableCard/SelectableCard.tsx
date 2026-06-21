@@ -42,7 +42,7 @@ export const SelectableCard = forwardRef<HTMLButtonElement, SelectableCardProps>
 			<div className="min-w-0 flex-1">
 				<div className="text-sm font-semibold">{title}</div>
 				{description ? (
-					<div className="mt-0.5 text-[13px] text-subtle-foreground">{description}</div>
+					<div className="mt-0.5 text-[13px] text-muted-foreground">{description}</div>
 				) : null}
 			</div>
 			{trailing ? <div className="flex-none">{trailing}</div> : null}

@@ -57,45 +57,45 @@ export const Palette: Story = {
 		<div className="max-w-[920px]">
 			<SwatchGrid
 				title="Primarias & Marca"
-				description="Verde-lima de destaque e o navy primario do sistema."
+				description="Azul de acao do sistema, fundo soft e o ink primario."
 				swatches={[
-					{ name: "Lime 400", token: "accent", value: "#A3E635" },
-					{ name: "Lime 300", token: "accent-300", value: "#BEF264" },
-					{ name: "Primary", token: "primary", value: "#1E293B" },
-					{ name: "Primary FG", token: "primary-foreground", value: "#FFFFFF", ring: true },
+					{ name: "Action / Primary", token: "accent", value: "#2B4BF2" },
+					{ name: "Action soft", token: "accent-300", value: "#E8ECFD", ring: true },
+					{ name: "Ink", token: "primary", value: "#16181D" },
+					{ name: "White", token: "primary-foreground", value: "#FFFFFF", ring: true },
 				]}
 			/>
 			<SwatchGrid
 				title="Superficies & Neutros"
-				description="Backgrounds, bordas e hierarquia de texto."
+				description="Backgrounds, bordas e hierarquia de texto em tons de gray."
 				swatches={[
 					{ name: "Background", token: "background", value: "#FFFFFF", ring: true },
-					{ name: "Muted", token: "muted", value: "#F8FAFC", ring: true },
-					{ name: "Secondary", token: "secondary", value: "#F1F5F9", ring: true },
-					{ name: "Border", token: "border", value: "#E2E8F0", ring: true },
-					{ name: "Foreground", token: "foreground", value: "#1E293B" },
-					{ name: "Muted FG", token: "muted-foreground", value: "#64748B" },
-					{ name: "Subtle FG", token: "subtle-foreground", value: "#94A3B8" },
-					{ name: "Ring", token: "ring", value: "#1E293B" },
+					{ name: "App bg", token: "app-bg", value: "#F4F6FA", ring: true },
+					{ name: "Gray 100", token: "secondary", value: "#EEF0F4", ring: true },
+					{ name: "Border", token: "border", value: "#E5E7EB", ring: true },
+					{ name: "Ink (texto 1)", token: "foreground", value: "#16181D" },
+					{ name: "Gray 500 (texto 2)", token: "muted-foreground", value: "#6B7280" },
+					{ name: "Gray 400 (texto 3)", token: "subtle-foreground", value: "#8B93A2" },
+					{ name: "Ring", token: "ring", value: "#2B4BF2" },
 				]}
 			/>
 			<SwatchGrid
 				title="Semanticas"
-				description="Feedback de estado."
+				description="Feedback de estado. Danger e info acompanham a nova paleta."
 				swatches={[
 					{ name: "Success", token: "success", value: "#22C55E" },
 					{ name: "Warning", token: "warning", value: "#F59E0B" },
-					{ name: "Error", token: "error", value: "#EF4444" },
-					{ name: "Info", token: "info", value: "#3B82F6" },
+					{ name: "Danger", token: "error", value: "#F23B47" },
+					{ name: "Info", token: "info", value: "#2B4BF2" },
 				]}
 			/>
 			<SwatchGrid
 				title="Categorias (Macros & Treino)"
-				description="Cores por tipo de macro e atividade."
+				description="Proteina azul, carbo gray, gordura/caloria laranja e cardio verde."
 				swatches={[
-					{ name: "Proteina", token: "protein", value: "#3B82F6" },
-					{ name: "Carboidrato", token: "carbs", value: "#EAB308" },
-					{ name: "Gordura", token: "fat", value: "#F97316" },
+					{ name: "Proteina", token: "protein", value: "#2B4BF2" },
+					{ name: "Carboidrato", token: "carbs", value: "#C4C9D2", ring: true },
+					{ name: "Gordura / Caloria", token: "fat", value: "#F97316" },
 					{ name: "Cardio", token: "cardio", value: "#22C55E" },
 				]}
 			/>

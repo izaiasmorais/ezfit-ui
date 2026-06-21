@@ -72,7 +72,7 @@ export const SelectItem = forwardRef<
 	>
 		<SelectPrimitive.ItemText>{children}</SelectPrimitive.ItemText>
 		<SelectPrimitive.ItemIndicator>
-			<HugeiconsIcon icon={Tick02Icon} className="size-4 text-accent-foreground" strokeWidth={3} />
+			<HugeiconsIcon icon={Tick02Icon} className="size-4 text-accent" strokeWidth={3} />
 		</SelectPrimitive.ItemIndicator>
 	</SelectPrimitive.Item>
 ));

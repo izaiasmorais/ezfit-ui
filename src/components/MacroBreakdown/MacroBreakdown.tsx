@@ -19,7 +19,7 @@ const cellTone: Record<CategoryColor, { bg: string; text: string }> = {
 	carbs: { bg: "bg-carbs-bg", text: "text-carbs-text" },
 	fat: { bg: "bg-fat-bg", text: "text-fat" },
 	cardio: { bg: "bg-cardio-bg", text: "text-cardio" },
-	accent: { bg: "bg-accent/15", text: "text-accent-foreground" },
+	accent: { bg: "bg-accent/10", text: "text-accent" },
 	primary: { bg: "bg-secondary", text: "text-foreground" },
 };
 
