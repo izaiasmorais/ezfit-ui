@@ -9,6 +9,7 @@ export * from "./components/Chart";
 export * from "./components/Checkbox";
 export * from "./components/DataTable";
 export * from "./components/DateNavigator";
+export * from "./components/DatePicker";
 export * from "./components/Dialog";
 export * from "./components/EmptyState";
 export * from "./components/FilterChips";
