@@ -15,7 +15,7 @@ export const Slider = forwardRef<React.ElementRef<typeof SliderPrimitive.Root>, 
 				<SliderPrimitive.Range className="absolute h-full rounded-pill bg-accent" />
 			</SliderPrimitive.Track>
 			<SliderPrimitive.Thumb
-				className="block size-[22px] rounded-full border-[3px] border-primary bg-white shadow-[0_2px_6px_rgba(15,23,42,0.2)] outline-none focus-visible:ring-3 focus-visible:ring-ring/25 disabled:opacity-60"
+				className="block size-[22px] rounded-full border-[3px] border-accent bg-white outline-none focus-visible:ring-3 focus-visible:ring-ring/25 disabled:opacity-60"
 				aria-label="Valor"
 			/>
 		</SliderPrimitive.Root>

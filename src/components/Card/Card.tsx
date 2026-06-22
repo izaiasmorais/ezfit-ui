@@ -5,9 +5,9 @@ import { cn } from "@/lib/cn";
 export const cardVariants = cva("rounded-card", {
 	variants: {
 		variant: {
-			light: "bg-card text-card-foreground shadow-card",
-			dark: "bg-primary text-primary-foreground shadow-dark",
-			accent: "bg-accent text-accent-foreground shadow-accent",
+			light: "border border-border bg-card text-card-foreground",
+			dark: "bg-primary text-primary-foreground",
+			accent: "bg-accent text-accent-foreground",
 		},
 		padding: {
 			none: "p-0",

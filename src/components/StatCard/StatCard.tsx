@@ -7,9 +7,9 @@ import { IconTile, type IconTileProps } from "../IconTile";
 const statCardVariants = cva("rounded-card p-6", {
 	variants: {
 		variant: {
-			light: "bg-card text-card-foreground shadow-card",
-			accent: "bg-accent text-accent-foreground shadow-accent",
-			dark: "bg-primary text-primary-foreground shadow-dark",
+			light: "border border-border bg-card text-card-foreground",
+			accent: "bg-accent text-accent-foreground",
+			dark: "bg-primary text-primary-foreground",
 		},
 	},
 	defaultVariants: { variant: "light" },

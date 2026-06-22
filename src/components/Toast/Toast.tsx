@@ -62,7 +62,7 @@ export function ToastProvider({ children, duration = 3600 }: ToastProviderProps)
 							open={entry.open}
 							duration={entry.duration ?? duration}
 							onOpenChange={(open) => setOpen(entry.id, open)}
-							className="flex items-center gap-3.5 rounded-list bg-primary px-[18px] py-[15px] text-primary-foreground shadow-[0_16px_40px_rgba(15,23,42,0.35)] data-[state=open]:animate-toast-in"
+							className="flex items-center gap-3.5 rounded-list bg-primary px-[18px] py-[15px] text-primary-foreground data-[state=open]:animate-toast-in"
 						>
 							<div className="flex size-[38px] flex-none items-center justify-center rounded-[12px] bg-accent/20">
 								<HugeiconsIcon icon={Icon} className="size-[19px] text-accent" strokeWidth={3} />

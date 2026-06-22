@@ -15,7 +15,7 @@ export const ProfileCard = forwardRef<HTMLDivElement, ProfileCardProps>(
 		<div
 			ref={ref}
 			className={cn(
-				"inline-flex items-center gap-3.5 rounded-pill bg-card py-3 pr-[18px] pl-3 shadow-card",
+				"inline-flex items-center gap-3.5 rounded-pill border border-border bg-card py-3 pr-[18px] pl-3",
 				className,
 			)}
 			{...props}

@@ -28,8 +28,6 @@ const radii = [
 	{ token: "radius-pill", value: "9999px" },
 ];
 
-const shadows = ["shadow-sm", "shadow-md", "shadow-lg", "shadow-xl"];
-
 export const Spacing: Story = {
 	render: () => (
 		<div className="max-w-[520px] rounded-card bg-card p-7 shadow-card">
@@ -66,25 +64,6 @@ export const Radius: Story = {
 						/>
 						<div className="text-xs font-semibold">{item.token}</div>
 						<div className="font-mono text-[11px] text-subtle-foreground">{item.value}</div>
-					</div>
-				))}
-			</div>
-		</div>
-	),
-};
-
-export const Shadows: Story = {
-	render: () => (
-		<div className="max-w-[640px] rounded-card bg-card p-7 shadow-card">
-			<h3 className="mb-1 font-mono text-xs tracking-widest text-muted-foreground uppercase">
-				Sombras / Elevacao
-			</h3>
-			<p className="mb-7 text-[13px] text-subtle-foreground">Quatro niveis de profundidade.</p>
-			<div className="grid grid-cols-4 gap-6 p-2">
-				{shadows.map((shadow) => (
-					<div key={shadow} className="text-center">
-						<div className={`mb-2.5 h-16 rounded-[16px] bg-card ${shadow}`} />
-						<div className="text-xs font-semibold">{shadow.replace("shadow-", "")}</div>
 					</div>
 				))}
 			</div>

@@ -49,8 +49,8 @@ export function SegmentedControl({
 						className={cn(
 							"cursor-pointer rounded-pill px-3 py-2 font-sans text-[13px] font-semibold whitespace-nowrap transition-colors outline-none focus-visible:ring-3 focus-visible:ring-ring/25",
 							selected
-								? "bg-card text-foreground shadow-sm"
-								: "text-muted-foreground hover:text-foreground",
+								? "border border-border bg-card text-foreground"
+								: "border border-transparent text-muted-foreground hover:text-foreground",
 						)}
 					>
 						{option.label}

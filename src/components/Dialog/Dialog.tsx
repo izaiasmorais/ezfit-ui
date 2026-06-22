@@ -38,7 +38,7 @@ export const DialogContent = forwardRef<
 			<DialogPrimitive.Content
 				ref={ref}
 				className={cn(
-					"relative w-full max-w-[420px] rounded-card bg-card p-[30px] shadow-[0_24px_64px_rgba(15,23,42,0.3)] outline-none data-[state=open]:animate-toast-in",
+					"relative w-full max-w-[420px] rounded-card border border-border bg-card p-[30px] outline-none data-[state=open]:animate-toast-in",
 					className,
 				)}
 				onOpenAutoFocus={(event) => event.preventDefault()}

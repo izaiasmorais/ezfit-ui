@@ -41,7 +41,7 @@ export const SelectContent = forwardRef<
 			ref={ref}
 			position={position}
 			className={cn(
-				"z-50 min-w-[8rem] overflow-hidden rounded-list border border-border bg-card p-1.5 shadow-[0_12px_32px_rgba(15,23,42,0.14)]",
+				"z-50 min-w-[8rem] overflow-hidden rounded-list border border-border bg-card p-1.5",
 				position === "popper" && "data-[side=bottom]:translate-y-1",
 				className,
 			)}

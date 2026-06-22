@@ -19,7 +19,7 @@ export interface BarChartDatum {
 export interface BarChartProps {
 	data: BarChartDatum[];
 	activeIndex?: number;
-	height?: number;
+	height?: number | string;
 	unit?: string;
 	className?: string;
 }
@@ -56,7 +56,7 @@ export function BarChart({ data, activeIndex, height = 220, unit = "", className
 						dy={8}
 					/>
 					<Tooltip cursor={false} content={renderTooltip(unit)} />
-					<Bar dataKey="value" radius={[10, 10, 10, 10]} maxBarSize={40}>
+					<Bar dataKey="value" radius={[10, 10, 10, 10]} maxBarSize={64}>
 						{data.map((entry, index) => (
 							<Cell
 								key={entry.label}

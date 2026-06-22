@@ -12,7 +12,7 @@ export const Topbar = forwardRef<HTMLDivElement, TopbarProps>(
 	({ className, brand, actions, title, subtitle, children, ...props }, ref) => (
 		<div
 			ref={ref}
-			className={cn("overflow-hidden rounded-card bg-card shadow-card", className)}
+			className={cn("overflow-hidden rounded-card border border-border bg-card", className)}
 			{...props}
 		>
 			<div className="flex items-center justify-between border-b border-border-soft px-6 py-[18px]">

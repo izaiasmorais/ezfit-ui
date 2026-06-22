@@ -1,4 +1,4 @@
-import { forwardRef } from "react";
+import { forwardRef, type ReactNode } from "react";
 import { cn } from "@/lib/cn";
 
 export interface SidebarProps extends React.HTMLAttributes<HTMLElement> {}
@@ -7,7 +7,7 @@ export const Sidebar = forwardRef<HTMLElement, SidebarProps>(
 	({ className, children, ...props }, ref) => (
 		<nav
 			ref={ref}
-			className={cn("rounded-card bg-card p-[18px] pt-[22px] shadow-card", className)}
+			className={cn("rounded-card border border-border bg-card p-[18px] pt-[22px]", className)}
 			{...props}
 		>
 			{children}
@@ -18,7 +18,7 @@ Sidebar.displayName = "Sidebar";
 
 export interface SidebarBrandProps extends React.HTMLAttributes<HTMLDivElement> {
 	name: string;
-	logo?: string;
+	logo?: ReactNode;
 }
 
 export const SidebarBrand = forwardRef<HTMLDivElement, SidebarBrandProps>(
@@ -28,9 +28,15 @@ export const SidebarBrand = forwardRef<HTMLDivElement, SidebarBrandProps>(
 			className={cn("flex items-center gap-3 px-2.5 pt-1.5 pb-[22px]", className)}
 			{...props}
 		>
-			<div className="flex size-[42px] items-center justify-center rounded-[14px] bg-accent text-lg font-bold text-accent-foreground">
-				{logo ?? name.charAt(0)}
-			</div>
+			{logo ? (
+				<div className="flex size-[42px] items-center justify-center overflow-hidden rounded-[14px]">
+					{logo}
+				</div>
+			) : (
+				<div className="flex size-[42px] items-center justify-center rounded-[14px] bg-accent text-lg font-bold text-accent-foreground">
+					{name.charAt(0)}
+				</div>
+			)}
 			<span className="text-lg font-bold">{name}</span>
 		</div>
 	),

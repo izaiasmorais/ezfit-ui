@@ -17,7 +17,7 @@ export const ChartTooltip = forwardRef<HTMLDivElement, ChartTooltipProps>(
 		<div
 			ref={ref}
 			className={cn(
-				"min-w-[150px] rounded-[14px] bg-primary px-4 py-3 text-primary-foreground shadow-[0_8px_24px_rgba(15,23,42,0.25)]",
+				"min-w-[150px] rounded-[14px] bg-primary px-4 py-3 text-primary-foreground",
 				className,
 			)}
 			{...props}
